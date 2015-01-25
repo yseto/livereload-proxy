@@ -1,0 +1,13 @@
+{
+    "name": "my livereload gateway proxy",
+    "env": {
+        "BUILDPACK_URL": "https://github.com/kazeburo/heroku-buildpack-perl-procfile.git",
+        "KEY":  {
+            "description": "hook running secret parameter.",
+            "generator": "secret"
+        }
+    },
+    "addons": [
+            "redistogo:nano"
+    ]
+}
